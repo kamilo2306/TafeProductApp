@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProductApps
 {
+
+
     class Product
     {
         private decimal price;
@@ -14,6 +16,7 @@ namespace ProductApps
         private decimal delivery;
         private decimal wrapping;
         private decimal gst;
+
 
         private decimal Price
         {
@@ -60,10 +63,13 @@ namespace ProductApps
             Quantity = quantity;
         }
 
+
         //Calculate the total payment
         public void calTotalPayment()
         {
             TotalPayment = Price * Quantity;
         }
+
+
     }
 }
